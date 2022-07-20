@@ -1,0 +1,458 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Video Maker | Create & Edit Your Videos Easily - Animoto</title>
+    <style>
+        body {
+            font-family: ProximaNova, helvetica neue, helvetica, arial, sans-serif;
+            display: inline;
+        }
+
+        #navbar {
+            border-bottom: 1px solid rgb(179, 179, 179);
+            margin-top: -8px;
+            display: flex;
+            height: 90px;
+            align-items: center;
+
+        }
+
+        #img {
+            width: 380px;
+
+
+        }
+
+        #img {
+            background-image: url("https://animoto.com/static/AnimotoLogoBlobs-afa5652205594807da50c94d53f42b86.svg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        #img>img {
+            width: 65%;
+            height: 100%;
+            margin-left: 70px;
+
+        }
+
+        #navigation-button {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            font-weight: bold;
+            color: rgb(31, 33, 144);
+            justify-content: space-between;
+        }
+
+        #navigation-button>:first-child {
+            display: flex;
+            width: auto;
+            font-size: 15px;
+            gap: 20px;
+        }
+
+        #navigation-button>:first-child {
+            margin-left: 20px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        #Sign-up {
+            display: flex;
+            gap: 50px;
+            margin-right: 20px;
+            justify-content: right;
+        }
+
+        #header {
+            height: auto;
+            background-color: rgba(226, 222, 250, 0.478);
+        }
+
+        #header>:first-child {
+            height: 120px;
+            width: 280px;
+            background-image: url("https://animoto.com/static/YellowCorner-d367eaf0eeff2a90f1d4d374e3b1c3e8.svg");
+            background-repeat: no-repeat;
+            display: block;
+        }
+
+        #header>:nth-child(2) {
+            height: 180px;
+            width: 130px;
+            margin-top: -65px;
+            background-image: url("https://animoto.com/static/TealDots-212c4a91665ce0cc624cdf92514a34d6.svg");
+            background-repeat: no-repeat;
+            display: block;
+        }
+
+        #heading {
+            width: 85%;
+            height: 500px;
+            margin: auto;
+            margin-top: -100px;
+        }
+
+        #heading {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        #first-box>div {
+            display: flex;
+            gap: 10px;
+            height: auto;
+        }
+
+        #first-box>div>div {
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        #first-box>div>span {
+            width: 120px;
+            background-image: url("https://animoto.com/static/wavy-e1cf461e1a9e7fed09a8a00a53c93f7f.svg");
+            background-repeat: no-repeat;
+            display: block;
+            margin-top: 7px;
+        }
+
+        #first-box {
+            letter-spacing: 0px;
+        }
+
+        #first-box>h1 {
+            margin: 10px;
+            font-family: PlayfairDisplay-Bold, serif;
+            font-size: 85px;
+        }
+
+        #first-box>p {
+            margin-top: 30px;
+            font-size: 22px;
+            font-weight: lighter;
+        }
+
+        #first-box>button {
+            padding: 13px 40px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 0px;
+            background-color: rgb(43, 43, 151);
+            color: white;
+            border-radius: 40px;
+            margin-top: 40px;
+
+        }
+
+        #second-box {
+            text-align: center;
+            background-image: url("https://animoto.com/static/desktop-image-bg-8ea06e38a522392f18df00037c063f3b.svg");
+            background-repeat: no-repeat;
+            background-size: 90%;
+            background-position: 70px;
+        }
+
+        #second-box>video {
+            width: 90%;
+            height: auto;
+        }
+
+        #header>:last-child {
+            width: 80px;
+            height: 100%;
+            display: block;
+            background-image: url("https://animoto.com/static/GreenSplats-15fc0323bde2b75a41736eea23e94dc7.svg");
+            background-repeat: no-repeat;
+            margin-top: -6%;
+            float: right;
+        }
+
+        #features {
+            width: 60%;
+            margin: auto;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        #features>:first-child {
+            overflow: hidden;
+            font-family: PlayfairDisplay-Bold, serif;
+            font-size: 25px;
+
+        }
+
+        .zig-zag-img {
+            width: 120px;
+            height: 20px;
+            background-image: url("https://animoto.com/static/wavy-e1cf461e1a9e7fed09a8a00a53c93f7f.svg");
+            background-repeat: no-repeat;
+            display: inline-block;
+
+
+        }
+
+        #feat-box {
+            margin-top: 20px;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            align-items: flex-end;
+        }
+
+        #feat-box>div>p {
+            color: rgb(68, 68, 68);
+            margin-top: 0px;
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 1px;
+            font-weight: lighter;
+        }
+
+        #feat-box>div>img {
+            width: 40%;
+            margin: auto;
+        }
+
+        #features>button {
+            padding: 13px 40px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 0px;
+            background-color: rgb(43, 43, 151);
+            color: white;
+            border-radius: 40px;
+            margin-top: 40px;
+        }
+
+        #features>:last-child {
+            width: 31%;
+            font-weight: bold;
+            margin: auto;
+            margin-top: 40px;
+            border-bottom: 2px solid rgb(0, 0, 140);
+            color: rgb(2, 2, 185);
+            line-height: 20px;
+        }
+
+        #example-feed {
+            width: 95%;
+            margin: auto;
+            margin-top: 100px;
+            background-color: rgba(238, 235, 255, 0.478);
+            text-align: center;
+
+        }
+
+        #example-feed>p {
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(43, 43, 94);
+            margin: 30px 0px -20px 0px;
+            padding-top: 20px;
+
+        }
+
+        #example-feed>h1 {
+            font-family: PlayfairDisplay-Bold, serif;
+            font-size: 50px;
+            color: rgb(43, 43, 97);
+        }
+
+        .zig-zag-img {
+            width: 120px;
+            height: 20px;
+            background-image: url("https://animoto.com/static/wavy-e1cf461e1a9e7fed09a8a00a53c93f7f.svg");
+            background-repeat: no-repeat;
+            display: inline-block;
+        }
+
+        #button-box {
+            width: 55%;
+            margin: auto;
+            display: grid;
+            margin-top: 25px;
+            grid-template-columns: repeat(5, 1fr);
+            font-size: 18px;
+        }
+
+        #video-box {
+            width: 55%;
+            margin: auto;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: left;
+            gap: 20px;
+        }
+
+        #video-box>div>h3 {
+            letter-spacing: 2px;
+            font-size: 18px;
+        }
+
+        #video-box video {
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        }
+
+        #video-box>div>button {
+            padding: 13px 40px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 0px;
+            background-color: rgb(54, 54, 131);
+            color: white;
+            border-radius: 40px;
+
+        }
+
+        #example-feed>:last-child {
+            width: 10%;
+            font-size: 17px;
+            margin: auto;
+            margin-top: 6%;
+            border-bottom: 2px solid rgb(54, 54, 131);
+            color: rgb(54, 54, 131);
+
+        }
+
+        #button-box {
+            color: rgb(54, 54, 131);
+        }
+
+        #button-box>:nth-child(3) {
+            border-bottom: 2px solid;
+            width: 75%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="img">
+            <img src="https://animoto.com/static/logo-1d220e413f4f69fa42d66d93381db371.svg">
+        </div>
+        <div id="navigation-button">
+            <div>
+                <div>CREATE</div>
+                <div>TEMPLATES</div>
+                <div>FEATURES</div>
+                <div>PRICING</div>
+                <div>LEARN</div>
+            </div>
+            <div id="Sign-up">
+                <div>
+                    LOG IN
+                </div>
+                <div>
+                    SIGN UP FREE
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="header">
+        <span></span>
+        <span></span>
+        <div id="heading">
+            <div id="first-box">
+                <div>
+                    <div>DO-IT-YOURSELF</div>
+                    <span></span>
+                </div>
+                <h1>Easily make your own videos</h1>
+                <p>Join millions of people creating and sharing videos with our easy drag and drop video maker. No
+                    experience necessary.</p>
+                <button>GET STARTED FREE</button>
+            </div>
+            <div id="second-box">
+                <video autoplay loop muted
+                    src="https://d2of6bhnpl91ni.cloudfront.net/cms/03_New%20Aspirational%20V2_YT_Stream-b0e722c3fc.mp4"></video>
+            </div>
+
+        </div>
+        <span></span>
+    </div>
+    <div id="features">
+        <div>
+            <h1>Create professional videos for work and life</h1>
+            <span class="zig-zag-img"></span>
+        </div>
+        <div id="feat-box">
+            <div>
+                <img
+                    src="https://images.ctfassets.net/00i767ygo3tc/56cuaWEbN3xseXjRR0sQ4I/0f5d203d20d91e6842025bb663c7698b/DragDropIllustration.png?w=420&h=393&q=80&fm=webp">
+                <h4>DRAG AND DROP</h4>
+                <p>Upload photos and clips into an easy-to-use template or start from scratch.</p>
+            </div>
+            <div>
+                <img
+                    src="https://images.ctfassets.net/00i767ygo3tc/1XFBgrueGvHAxZSK0YPhXb/720a71e523ac18c9a31e0c67331ec1a6/CreateIllustration.png?w=192&h=179&q=80&fm=webp">
+                <h4>MAKE IT YOUR OWN</h4>
+                <p>Customize your video with colors, fonts, transitions, and more.</p>
+            </div>
+            <div>
+                <img
+                    src="https://images.ctfassets.net/00i767ygo3tc/6bU5NmAVxhr7HQ1WXYWkGR/d4b3cb8c13ffaa12f5c5393f5f34c84d/MusicLibraryIllustration.png?w=239&h=223&q=80&fm=webp">
+                <h4>SET TO MUSIC</h4>
+                <p>Bring your video to life with a licensed song from our music library.</p>
+            </div>
+
+        </div>
+        <button>GET STARTED FREE</button>
+        <p>LEARN MORE ABOUT ANIMOTO'S FEATURES</p>
+
+
+    </div>
+    <div id="example-feed">
+        <p>IMAGINE IT. CREATE IT.</p>
+        <h1>Create quickly with video templates</h1>
+        <span class="zig-zag-img"></span>
+        <div id="button-box">
+            <div>SOCIAL TRENDS</div>
+            <div>BUSINESS</div>
+            <div>PROMO VIDEOS</div>
+            <div>CELEBRATIONS</div>
+            <div>PERSONAL</div>
+
+        </div>
+        <div id="video-box">
+            <div><video preload="auto"
+                    poster="https://images.ctfassets.net/00i767ygo3tc/asset-sktwi7jfjxrnhftb/2db5197bda4b725b384182bd0a10587a/New_Launch_Promo.jpg?w=350&h=197&q=50&fm=webp"
+                    src="https://d2of6bhnpl91ni.cloudfront.net/cms/new-product-video-promo-template%20(1)-6edf638941.mp4"></video>
+                <h3>NEW LAUNCH PROMO</h3>
+                <button>USE THIS TEMPLATE</button>
+            </div>
+            <div>
+                <video
+                    poster="https://images.ctfassets.net/00i767ygo3tc/asset-sktwi7jfjxrnhftc/90b05ace043ddbc3f9a1c30b88e1a4bc/Collection_Portfolio.jpg?w=350&h=197&q=50&fm=webp"
+                    src="https://d2of6bhnpl91ni.cloudfront.net/cms/new-product-video-promo-template%20(1)-6edf638941.mp4"></video>
+                <h3>COLLECTION PORTFOLIO</h3>
+                <button>USE THIS TEMPLATE</button>
+            </div>
+            <div>
+                <video
+                    poster="https://images.ctfassets.net/00i767ygo3tc/asset-sktwi7jfjxrnhftd/9a94be4c48398ceb3c23b40469d82fe5/Bite_Sized_Product_Intro.jpg?w=350&h=197&q=50&fm=webp"
+                    src="https://d2of6bhnpl91ni.cloudfront.net/cms/new-product-video-promo-template%20(1)-6edf638941.mp4"></video>
+                <h3>BITE-SIZED PRODUCT INTRO</h3>
+                <button>USE THIS TEMPLATE</button>
+            </div>
+        </div>
+        <h4>SEE ALL TEMPLATES</h4>
+    </div>
+</body>
+
+</html>
