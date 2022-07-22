@@ -1,0 +1,527 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Video Templates - Animoto</title>
+    <style>
+        body {
+            font-family: ProximaNova, helvetica neue, helvetica, arial, sans-serif;
+        }
+
+        #navbar {
+            margin: auto;
+            height: 80px;
+            display: flex;
+            margin: -10px;
+            border-bottom: 1px solid rgb(193, 192, 192);
+        }
+
+        #navbar>:last-child {
+            display: flex;
+            margin: auto;
+            align-items: center;
+            gap: 15px;
+            color: gray;
+            margin-left: -40px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        #navbar>:first-child {
+            text-align: center;
+            margin: auto;
+        }
+
+        #sidebar ul {
+            width: 300px;
+            border-right: 1px solid rgb(196, 195, 195);
+            margin: 70px 0px 0px 10px;
+            height: 100%;
+            list-style-type: none;
+        }
+
+        #sidebar ul>:first-child {
+            font-weight: bold;
+            color: black;
+        }
+
+        #sidebar ul li {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #25316c;
+        }
+
+        #sidebar ul>:nth-child(6) {
+            margin-top: 50px;
+            font-weight: bold;
+            font-size: 17px;
+            color: black;
+        }
+
+        #middle {
+            display: flex;
+        }
+        #middle-box{
+            margin-left: 20px;
+        }
+
+        #template-top {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: auto;
+            margin-top: 60px;
+            justify-content: space-between;
+        }
+
+        #template-top>div {
+            width: auto;
+        }
+
+        #template-top h4 {
+            letter-spacing: 2px;
+        }
+
+        #template-top h1 {
+            line-height: 0px;
+            font-size: 50px;
+            font-family: PlayfairDisplay-Bold, serif;
+            color: #293573;
+        }
+
+        #template-top p {
+            font-size: 20px;
+
+        }
+
+        #template-top button {
+            padding: 12px 40px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 0px;
+            background-color: white;
+            color: rgb(166, 165, 165);
+            border: 2px solid lightgray;
+            border-radius: 40px;
+            margin-top: 40px;
+        }
+
+        #template-top>:last-child {
+            margin-right: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #template-top input {
+            width: 100%;
+            margin: auto;
+            height: 40px;
+            font-size: 15px;
+            border: 2px solid rgb(176, 175, 175);
+            color: gainsboro;
+        }
+
+        .zig-zag-img {
+            width: 120px;
+            height: 20px;
+            background-image: url("https://animoto.com/static/wavy-e1cf461e1a9e7fed09a8a00a53c93f7f.svg");
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        #template {
+            width: 100%;
+            
+        }
+
+        #template>div {
+            width: 70%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        #template>div>div {
+            text-align: center;
+            box-shadow: 0 2px 6px 0 rgb(0 0 0 / 20%), 0 0 2px 0 rgb(0 0 0 / 20%);
+            background-color: #f3f3f9;
+        }
+
+        #template>div>div p {
+            line-height: 25px;
+            margin-bottom: 60px;
+        }
+
+        #template video {
+            width: 80%;
+            align-items: center;
+            margin: 60px auto 40px auto;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        }
+
+
+        #template>div>div:hover {
+            border: 1px solid rgb(2, 2, 136);
+        }
+
+        hr {
+            margin-top: 100px;
+        }
+
+        #template>:last-child {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+        #template-2>div{
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            text-align: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        #template-2>div>div{
+            border: 1px solid transparent;
+            text-align: center;
+            box-shadow: 0 2px 6px 0 rgb(0 0 0 / 20%), 0 0 2px 0 rgb(0 0 0 / 20%);
+            background-color: #f3f3f9;
+            height: 500px;
+            cursor: pointer;
+        }
+        #template-2 video{
+            width: 80%;
+            height: 240px;
+            background-color: transparent;
+            margin: 60px auto 0px auto;
+        }
+        #template-2 h3{
+            color: #1f2855;
+        }
+        #template-2 p{
+            line-height: 25px;
+            margin-bottom: 60px;
+            margin: 0px 10px 40px 10px;
+            color: #293573;
+        }
+        #template-2>div>div:hover{
+            border: 1px solid darkblue;
+        }
+        hr+h4{
+            font-size: 25px;
+            font-family: PlayfairDisplay-Bold, serif;
+            color: #293573;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div id="navbar">
+        <div>
+            <img src="https://d2of6bhnpl91ni.cloudfront.net/images/logo/logo_color_text-23fd067394.svg">
+
+        </div>
+        <div>
+            <div>BUSINESS</div>
+            <div>PHOTOGRAPHY</div>
+            <div>FAMILY</div>
+            <div>PRICING</div>
+            <div>SIGN UP</div>
+            <div>LOG IN</div>
+        </div>
+    </div>
+    <!-- middle section -->
+    <div id="middle">
+        <!-- sidebar -->
+        <div id="sidebar">
+            <ul>
+                <li>VIEW BY</li>
+                <li id="rcd">Recommended for you</li>
+                <li>All templates</li>
+                <li id="new">New</li>
+                <li>Popular</li>
+                <li>TYPE OF TEMPLATE</li>
+                <li>About Us</li>
+                <li>Amazon Promo</li>
+                <li>Behind The Scenes</li>
+                <li>Celebrations</li>
+                <li>Education</li>
+                <li>Event</li>
+                <li>Explainer</li>
+                <li>Holiday</li>
+                <li>List</li>
+                <li>Motivational</li>
+                <li>Narrative</li>
+                <li>Product Promotion</li>
+                <li>Real Estate</li>
+                <li>Service Promotion</li>
+                <li>Slideshow</li>
+                <li>Teaser</li>
+                <li>Testimonial</li>
+                <li>Tutorial</li>
+                <li>Valentine's Day</li>
+                <li>Workplace</li>
+            </ul>
+        </div>
+        <div id="middle-box">
+            <div id="template-top">
+                <div>
+                    <h4>CHOOSE A TEMPLATE</h4>
+                    <h1>Recommended for you</h1>
+                    <span class="zig-zag-img"></span>
+                    <p>We suggest starting with these templates.</p>
+                </div>
+                <div>
+                    <button>START FROM SCRATCH</button>
+                    <input type="text" placeholder="Search all template">
+                </div>
+            </div>
+            <div id="template">
+
+                <div>
+                    <div>
+                        <video
+                            src="https://d150hyw1dtprld.cloudfront.net/Footage/oz97cuDNSRt4Aqm8G1eksQ/hover-preview-3f29da3e2a.mp4"
+                            class="clip"></video>
+                        <h3>Wedding Slideshow</h3>
+                        <p>Relive precious memories from your wedding day with a timeless video slideshow.</p>
+                    </div>
+                    <div>
+                        <video
+                            src="https://d150hyw1dtprld.cloudfront.net/Footage/11oD44a4Fc9rgCs35awFWw/hover-preview-1202974bea.mp4"
+                            class="clip"></video>
+                        <h3>Birthday Card</h3>
+                        <p>Wish a loved one a happy birthday with this digital card.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip"
+                            src="https://d150hyw1dtprld.cloudfront.net/Footage/5azA9x1P1kXNGcV2XlD1Qg%20/hover-preview-f0cfb34826.mp4"></video>
+                        <h3>In Loving Memory</h3>
+                        <p>Remember someone special you lost by celebrating them with memorable pictures throughout
+                            their lifetime.</p>
+                    </div>
+                </div>
+                
+               
+            </div>
+            <hr>
+            <h4>More templates to get started</h4>
+            <div id="template-2">
+                <div>
+                    <div>
+                        <video 
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/paL7AGT2bBVWxKvJ0u0bog/hover-preview-87bcb07a53.mp4"></video>
+                        <h3>Digital Album</h3>
+                        <p>Pair your images with your client’s story to build a beautiful digital photo album they’ll want to share.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/9HEsg2khwMIM6Sxw6H2ftg/hover-preview-0720011d7f.mp4"></video>
+                        <h3>Simple Product Explainer</h3>
+                        <p>Highlight the value of your product, service, or idea with a clever, easy-to-follow video.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/QDqS33VuXHJ0RIo702jW0Q/hover-preview-c3bda5ee16.mp4"></video>
+                        <h3>Sports Recap</h3>
+                        <p>Celebrate the blood, sweat, and tears from this past season with a recap reel.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/2MYu1nskd8ewfO7LEekRtQ/hover-preview-3fafdb9e69.mp4"></video>
+                        <h3>Event Recap</h3>
+                        <p>Keep the momentum going after an event by sharing video highlights and key takeaways.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/0JVfAVlGHsyrWkjkhSPy0A/hover-preview-1cd9e7c16a.mp4"></video>
+                        <h3>Book Trailer</h3>
+                        <p>Attract new readers by catching their attention online. Create a thrilling book trailer that’s sure to</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/RU3chxhw2sgwaezCDAzVmA/hover-preview-72140b93b4.mp4"></video>
+                        <h3>Bite-sized Product Intro</h3>
+                        <p>Introduce a product or service using a short and punchy template that'll grab attention.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/axEe4vWM61iyQV4aitSY9A/hover-preview-0af94e7ff2.mp4"></video>
+                        <h3>Anniversary Celebration</h3>
+                        <p>Celebrate a milestone anniversary with a sweet video that looks back on a story of love.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/pZT06LBnBEWGb4zTPNPhMA/hover-preview-9943280ce8.mp4"></video>
+                        <h3>Celebration of Life</h3>
+                        <p>Celebrate your loved one’s memory with a moving video tribute.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/8XrE91W34jDsBkTDvx1qhg/hover-preview-8e57fbc9ab.mp4"></video>
+                        <h3>New Real Estate Listing</h3>
+                        <p>Inform your customers of a new available listing on the market with this short and simple video.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/nqm08K03S8EbR0HEnnaGnA/hover-preview-ab9a369ac6.mp4"></video>
+                        <h3>We're Hiring</h3>
+                        <p>Find the right fit for open roles and showcase your company benefits with a video.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/zRlJg1qNnzB4P1hm5E1WHQ/hover-preview-7852291bc7.mp4"></video>
+                        <h3>Guide to Your First 30 Days</h3>
+                        <p>Help new hires hit the ground running with an in-depth plan of their first 30 days on the job.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/w16BejnE7DvYvYVOEgg3dw/hover-preview-721389b777.mp4"></video>
+                        <h3>Self-Introduction</h3>
+                        <p>Introduce yourself with a few fun facts and a call to work together.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/PoirMpQQJQlQZeukjs75kQ/hover-preview-691b016fd6.mp4"></video>
+                        <h3>Bite-sized Product Intro</h3>
+                        <p>Introduce a product or service using a short and punchy template that'll grab attention.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/RIBGVENOKazJzYCrkGqfpw/hover-preview-3fdca13c08.mp4"></video>
+                        <h3>Class of 2022</h3>
+                        <p>Send off this year’s graduating class with a powerful quote.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/wRZdNys0BdlMxmfMn0zQWA/hover-preview-07abf017e2.mp4"></video>
+                        <h3>Retirement Celebration</h3>
+                        <p>Celebrate a retiree’s career through a collection of photos and video clips.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/U1t1pzW1loJSh0y8N5rMFg/hover-preview-73ba029ac8.mp4"></video>
+                        <h3>Brand Awareness Ad</h3>
+                        <p>Get new audiences interested in your company or product with this bold, eye-catching ad.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/uABru7xGo8tETL1m4ooWXA/hover-preview-ea1f29b684.mp4"></video>
+                        <h3>Product Demo</h3>
+                        <p>Help users get the most out of your product with step-by-step instructions and video demos.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/xNN55m9fANOygnRzyMndyg/hover-preview-1a278deae1.mp4"></video>
+                        <h3>Employee Spotlight</h3>
+                        <p>Help your team and social audience get to know your star employees with a spotlight video.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/ekkIGA314Hp0jy9rwHYCFQ/hover-preview-738aedac78.mp4"></video>
+                        <h3>How to Submit Expenses</h3>
+                        <p>Create a straightforward step-by-step video explaining how to submit an expense report.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/B3zG8S8Y98kWywXGlqfMSA/hover-preview-ad10ed1803.mp4"></video>
+                        <h3>Happy Birthday Slideshow</h3>
+                        <p>Create a quick journey down memory lane to celebrate a birthday.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/ZBP0uuK9yeAPB0jjLr1X0g/hover-preview-d92e1a143e.mp4"></video>
+                        <h3>Vacation Recap</h3>
+                        <p>Have your friends and family follow along on your latest travel adventure.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/tvDoGid0GZ0FzlsEhcdwxg/hover-preview-9a68cf2fd3.mp4"></video>
+                        <h3>This Year's Moments</h3>
+                        <p>Share the year's memories with friends on social media.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/gSX8Fe2KpvcFrXQuWaIjfg/hover-preview-6569349430.mp4"></video>
+                        <h3>Workplace Explainer</h3>
+                        <p>Explain the “why” behind new initiatives and goals with this informative video.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/059u3QpTp0t1d9APxgd8VA/hover-preview-a0aadc2676.mp4"></video>
+                        <h3>Product Teaser</h3>
+                        <p>Build anticipation for your latest product launch with a video.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/C0AE2dtIgLxrXeLJQucfxg/hover-preview-98688a539a.mp4"></video>
+                        <h3>Product Intro Ad</h3>
+                        <p>Catch viewers' eyes and stand out on social with bold and colorful text layouts that pop.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/oWaS1Os1KSaCI5eMEgKMdA/hover-preview-7a84e58277.mp4"></video>
+                        <h3>Wedding Highlights</h3>
+                        <p>Share some highlights from your wedding day with your friends, family, and followers.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/5jIpC0Y5TZpKTXsbtQ1fsQ/hover-preview-ca54c22f3d.mp4"></video>
+                        <h3>Educational Presentation</h3>
+                        <p>Offer up your knowledge on any subject with this informative video.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/7n7VwaeBDXOpnV0ZAJWPbQ/hover-preview-bdc67a281a.mp4"></video>
+                        <h3>In Memoriam Slideshow</h3>
+                        <p>Celebrate the life of someone special by remembering the joy they brought to you.</p>
+                    </div>
+                    <div>
+                        <video
+                        class="clip" src="https://d150hyw1dtprld.cloudfront.net/Footage/EKJjNppg2ItTOgf1frEYtw/hover-preview-2b1b3c3e0f.mp4"></video>
+                        <h3>About Us</h3>
+                        <p>Put your business in the spotlight using a simple zoom-in video style and an elegant brush stroke behind your text.</p>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+
+        </div>
+</body>
+
+</html>
+
+<script>
+    let clip = document.querySelectorAll(".clip")
+    clip.forEach(function(ele){
+        ele.addEventListener("mouseenter", function(){
+            ele.currentTime = 0.1
+            ele.play()
+        })
+        ele.addEventListener("mouseout", function(){
+            ele.pause()
+        })
+        
+    })
+    
+    document.querySelector("#new").addEventListener("click",function(){
+        document.getElementById("template").innerHTML = ""
+        document.querySelector("hr+h4").innerHTML = ""
+        document.querySelector("h4+h1").innerHTML = "New"
+        document.querySelector("span+p").innerHTML = "Discover the newest templates added to Animoto."
+        document.querySelector("hr").remove()
+    })
+    document.querySelector("#rcd").addEventListener("click",function(){
+        
+    })
+
+
+
+</script>
